@@ -43,7 +43,7 @@ body{-webkit-font-smoothing:antialiased}section{margin-top:46px}
 .hero h1{margin-top:0}
 .skill{position:relative;cursor:default;transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
 .skill:hover,.skill:focus-visible{transform:translateY(-3px);box-shadow:0 4px 12px #0003;outline:2px solid #888;outline-offset:3px;z-index:2}
-.skill:hover .skill-tooltip,.skill:focus-visible @media(max-width:540px){.avatar{width:80px;height:80px}}
+@media(max-width:540px){.avatar{width:80px;height:80px}}
 
 #contact .hello-link{display:inline-block;color:var(--text-muted);text-decoration:none;transition:transform .2s ease,color .2s ease}
 #contact .hello-link span{color:#2897ff;transition:color .2s ease}
@@ -51,3 +51,13 @@ body{-webkit-font-smoothing:antialiased}section{margin-top:46px}
 #contact .hello-link:hover span,#contact .hello-link:focus-visible span{color:#65b5ff}
 #about > .text-link{display:inline-block;margin-top:20px;padding:4px 0;font-size:15px;font-weight:600;color:var(--fg);text-decoration:underline;text-decoration-color:#888;text-underline-offset:6px;text-decoration-thickness:1px;transition:transform .2s ease,color .2s ease,text-decoration-color .2s ease}
 #about > .text-link:hover,#about > .text-link:focus-visible{transform:translateY(-3px);color:#65b5ff;text-decoration-color:#65b5ff}
+
+.writing-index-link{font-size:12px;text-decoration:underline;text-underline-offset:5px;color:var(--fg)}
+.writing-page{min-height:65vh}.back-link{font-size:13px;color:var(--text-muted);text-decoration:underline;text-underline-offset:5px}.back-link:hover{color:var(--fg)}
+.writing-header{margin:45px 0 38px}.writing-header h1{margin:12px 0 18px;line-height:1.15;overflow-wrap:anywhere}.writing-header>p{font-size:16px;max-width:550px;line-height:1.8}
+.writing-kicker{font:10px ui-monospace,monospace;letter-spacing:1.5px;color:var(--text-muted)}
+.post-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}.post-filters button{border:0;border-radius:6px;background:transparent;color:var(--text-muted);padding:7px 12px;font:inherit;font-size:12px;cursor:pointer}.post-filters button[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.post-list{list-style:none;padding:0;margin:0}.post-row{margin:0 0 12px}.post-row>a{display:block;padding:20px 18px;margin:0 -18px;border-radius:10px;transition:background .2s,transform .2s}.post-row>a:hover{background:var(--soft);transform:translateY(-2px)}.post-row h2{font-size:21px;margin:9px 0}.post-row p{font-size:14px}.post-meta{display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-size:11px;color:var(--text-muted)}.post-meta>span:first-child{color:var(--fg)}.read-time{display:block;font-size:11px;color:var(--text-muted);margin-top:12px}
+.writing-empty{padding:42px 0;color:var(--text-muted)}.writing-empty h2{font-size:19px;color:var(--fg);margin-bottom:8px}
+.prose{font-size:15px;line-height:1.9;overflow-wrap:anywhere}.prose p{margin:0 0 22px;color:var(--text-muted)}.prose h2{font-size:24px;margin:38px 0 16px}.prose h3{font-size:19px;margin:28px 0 12px}.prose h1{font-size:30px;margin:30px 0 18px}.prose a{color:var(--fg);text-decoration:underline;text-underline-offset:4px}.prose ul,.prose ol{padding-left:23px;margin:16px 0 24px;color:var(--text-muted)}.prose li{margin:7px 0}.prose strong{color:var(--fg)}.prose blockquote{margin:25px 0;padding:16px 22px;background:var(--soft);border-radius:8px}.prose blockquote p:last-child{margin-bottom:0}.prose code{font:12px/1.8 ui-monospace,monospace;background:var(--soft);padding:3px 5px;border-radius:4px}.prose pre{background:var(--soft);padding:20px;border-radius:9px;overflow:auto;white-space:pre;overflow-wrap:normal}.prose pre code{padding:0;background:none}.prose img{max-width:100%;height:auto;border-radius:8px}.prose table{display:block;overflow:auto;border-collapse:collapse}.prose th,.prose td{padding:8px 12px;text-align:left;border:1px solid var(--line)}.end-link{display:inline-block;margin-top:40px}
+@media(max-width:540px){.writing-header h1{font-size:34px}.dock{gap:1px;padding:4px}.dock a,.dock button{max-width:44px}.divider{margin:0 2px}.post-row>a{margin:0 -10px;padding:18px 10px}}

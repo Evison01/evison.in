@@ -4,3 +4,6 @@ node_modules/
 .env.*
 !.env.example
 /portfolio/.openai/
+
+/portfolio/dist/blog/
+.vercel/

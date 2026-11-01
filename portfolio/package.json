@@ -1,1 +1,13 @@
-{"name":"evison-portfolio","version":"1.0.0","private":true,"scripts":{"dev":"python3 -m http.server 3000 --directory dist","check":"node --check dist/app.js && node --check dist/profile.js"}}
+{
+  "name": "evison-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run build && python3 -m http.server 3000 --directory dist",
+    "check": "node --check dist/app.js && node --check dist/site.js && node --check dist/blog-filter.js && node --check scripts/build-blog.mjs && npm run build",
+    "build": "node scripts/build-blog.mjs"
+  },
+  "dependencies": {
+    "marked": "^18.1.2"
+  }
+}
